@@ -1,6 +1,6 @@
 plugins {
  id 'com.android.application'
- id 'org.jetbrains.kotlin.android' version '1.9.22'
+ id 'org.jetbrains.kotlin.android'
  id 'com.google.gms.google-services'
 }
 android {
@@ -18,7 +18,7 @@ android {
  composeOptions { kotlinCompilerExtensionVersion '1.5.8' }
 }
 dependencies {
- implementation platform('com.google.firebase:firebase-bom:32.8.1')
+ implementation platform('com.google.firebase:firebase-bom:33.1.0')
  implementation 'com.google.firebase:firebase-firestore-ktx'
  implementation 'com.google.firebase:firebase-messaging-ktx'
  implementation 'androidx.activity:activity-compose:1.8.2'
